@@ -111,7 +111,7 @@ int accederDato(int posi){
 
        
 			} 
-              return temp->dato;
+  return temp->dato;
 }
 
 
@@ -128,15 +128,16 @@ int accederDato(int posi){
 int main() {
 
 
-  	Cola cola;
+  Cola cola;
 	Cola cola2;
 	
-	cola.push(100);
-	cola.push(100);
+  cola.push(5);
+	cola.push(10);
+	cola.push(15);
 
   cout<<"Cola 1: "<<endl;
   cola.mostrarCola();
-  cout<<endl<<endl<<"El promedio de los números: "<<cola.ColaProm()<<endl;
+  cout<<endl<<endl<<"El promedio de los nÃºmeros es: "<<cola.ColaProm()<<endl;
   cout<<endl;
   
   for(int i=0; i<cola.SizeCola();i++){
@@ -146,6 +147,6 @@ int main() {
 
   }
 
-cout<<"Cola 2: "<<endl;
+  cout<<"Cola 2: "<<endl;
   cola2.mostrarCola();
 }
