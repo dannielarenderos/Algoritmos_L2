@@ -130,12 +130,13 @@ int main() {
 
   Cola cola;
 	Cola cola2;
+	Cola colainvertida;
 	
   cola.push(5);
 	cola.push(10);
 	cola.push(15);
 
-  cout<<"Cola 1: "<<endl;
+  cout<<endl<<"Cola 1: "<<endl;
   cola.mostrarCola();
   cout<<endl<<endl<<"El promedio de los números es: "<<cola.ColaProm()<<endl;
   cout<<endl;
@@ -146,7 +147,17 @@ int main() {
     }
 
   }
+  
+  for(int j=cola.SizeCola()-1;j>=0;j--){
+    
+    colainvertida.push(cola.accederDato(j));
+  
+  }
 
-  cout<<"Cola 2: "<<endl;
+
+cout<<"Cola 2, invertida de la 1:"<<endl;
+colainvertida.mostrarCola();
+cout<<endl;
+  cout<<endl<<"Cola 3, múltiplos del promedio: "<<endl;
   cola2.mostrarCola();
 }
